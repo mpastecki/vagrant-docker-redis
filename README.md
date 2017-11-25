@@ -4,7 +4,11 @@ This is for a study related project for which we need to show quick overview of 
 
 # How to run it?
 
-You must have vagrant and virtualbox installed. Then clone the repo, enter the directory with cloned files and run
+You must have vagrant and virtualbox installed. 
+
+If you are Windows user, before running following commands, make sure that both Virtualbox and CMD console are running as Administrator.
+
+Then clone the repo, enter the directory with cloned files and run
 
 ```sh
 vagrant up
