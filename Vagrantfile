@@ -65,6 +65,7 @@ Vagrant.configure("2") do |config|
       if auto 
         i.vm.provision "shell", inline: "docker swarm init --advertise-addr #{manager_ip}"
         i.vm.provision "shell", inline: "docker swarm join-token -q worker > /vagrant/token"
+	i.vm.provision "shell", inline: "docker service create --name redis --mode global --publish 6379:6379 redis"
       end
     end 
 
