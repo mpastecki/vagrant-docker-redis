@@ -12,14 +12,13 @@ auto = true
 # Set Virtualbox as default provider
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
 
-# Increase numworkers if you want more than 3 nodes
+# Number of worker nodes - Virtual Machines
 numworkers = 2
 
-# VirtualBox settings
-# Increase vmmemory if you want more than 512mb memory in the vm's
+# Memory for your Virtual Machines
 vmmemory = 1024
 
-# Increase numcpu if you want more cpu's per vm
+# Number of vCPU per VM
 numcpu = 2
 
 # Which box image to use
